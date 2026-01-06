@@ -31,3 +31,72 @@ Supports numerical evaluation, trigonometric functions, graphing expressions inv
 ```bash
 git clone https://github.com/your-username/scientific-calculator.git
 cd scientific-calculator
+
+2️⃣ Create virtual environment
+python -m venv venv
+venv\Scripts\activate
+
+3️⃣ Install dependencies
+pip install -r requirements.txt
+
+4️⃣ Run the application
+python sci_calc.py
+
+🧱 Build Windows Executable (.exe)
+pyinstaller --onefile --windowed sci_calc.py
+
+
+The executable will appear in:
+
+dist/sci_calc.exe
+
+
+Users can run it without installing Python.
+
+📂 Project Structure
+Scientific Calculator/
+│
+├─ engine/
+│   ├─ ast_eval.py
+│   ├─ evaluator.py
+│   └─ memory.py
+│
+├─ ui/
+│   ├─ graph.py
+│   └─ history.py
+│
+├─ sci_calc.py
+├─ README.md
+└─ requirements.txt
+
+🛡️ Security
+
+No use of eval
+
+Only whitelisted math functions allowed
+
+Safe AST parsing
+
+📜 License
+
+MIT License — free to use, modify, and distribute.
+
+👤 Author
+
+Abubakar Oluwatobi
+Built with ❤️ using Python
+
+
+---
+
+## 3️⃣ requirements.txt (correct & minimal)
+
+Yes — this is **perfect**:
+
+```txt
+customtkinter
+matplotlib
+numpy
+
+
+Nothing else needed 👍
